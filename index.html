@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Desafio Formulário</title>
+    <style>
+        * {
+            font-family: 'Nunito', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Cadastro</legend>
+            <label for="nome">Nome</label>
+            <br>
+            <input type="text" name="nome" id="nome" autofocus required>
+            <br>
+            <br>
+
+            <label for="email">Email</label>
+            <br>
+            <input type="email" name="email" id="email" required>
+            <br>
+            <br>
+
+            <label for="idade">idade</label>
+            <br>
+            <input type="number" name="idade" id="idade" inputmode="numeric" min="12" step="1" required>
+            <br>
+            <br>
+
+            <label for="data-nascimento">Data de Nascimento</label>
+            <br>
+            <input type="date" name="data-nascimento" id="data-nascimento" required>
+            <br>
+            <br>
+
+            <label for="midias-sociais">
+                Onde você possui conta:
+                <br>
+                <label for="instagram">
+                    <input type="checkbox" name="instagram" id="instagram">
+                    Instagram
+                </label>
+
+                <label for="facebook">
+                    <input type="checkbox" name="facebook" id="facebook">
+                    Facebook
+                </label>
+
+                <label for="youtube">
+                    <input type="checkbox" name="youtube" id="youtube">
+                    Youtube
+                </label>
+            </label>
+            <br>
+            <br>
+
+            <label for="sexo">
+                Sexo
+                <br>
+                <label for="masculino">
+                    <input type="radio" name="genero" id="masculino" required>
+                    Masculino
+                </label>
+                <label for="feminino">
+                    <input type="radio" name="genero" id="feminino" required>
+                    Feminino
+                </label>
+            </label>
+            <br>
+            <br>
+
+            <label for="cor-olhos">Cor dos Olhos</label>
+            <input type="color" name="cor-olhos" id="cor-olhos">
+            <br>
+            <br>
+
+            <label for="biografia">Biografia</label>
+            <br>
+            <textarea name="biografia" id="biografia" minlength="50" required></textarea>
+            <br>
+            <br>
+
+            <label for="foto-perfil">Foto do perfil</label>
+            <br>
+            <input type="file" name="foto-perfil" id="foto-perfil" accept="image/*" required>
+            <br>
+            <br>
+
+            <label for="telefone">Telefone</label>
+            <br>
+            <input type="tel" name="telefone" id="telefone" inputmode="numeric" required>
+            <br>
+            <br>
+
+            <label for="perfil-facebook">Link do perfil no Facebook</label>
+            <br>
+            <input type="url" name="perfil-facebook" id="perfil-facebook" required>
+            <br>
+            <br>
+
+            <label for="senha">Senha</label>
+            <br>
+            <input type="password" name="senha" id="senha" minlength="6" maxlength="8" required>
+            <br>
+            <br>
+
+            <button type="reset" name="reset" id="reset">Limpar</button>
+
+            <button type="submit" name="submit" id="submit">Enviar Dados</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
